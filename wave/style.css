@@ -1,0 +1,44 @@
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(38, 38, 39);
+	color: #fff;
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+h3 {
+	color: rgb(236, 236, 236);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 600px;
+	padding-top: 1%;
+}
+
+.circle {
+	background-image: linear-gradient(to bottom, #fff, #eee);
+	border-radius: 50%;
+	cursor: pointer;
+	margin: 8px;
+	height: 14px;
+	width: 14px;
+	transition: transform 0.3s linear;
+}
+
+.circle.grow {
+	transform: scale(2);
+}
